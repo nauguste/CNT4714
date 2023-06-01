@@ -1,0 +1,46 @@
+<web-app>
+
+    <!-- General description of your Web application -->
+    <display-name> Project 4 Index Page Hopefully?</display-name>
+
+    <description>
+        This is the Web application in which we 
+        demonstrate our JSP and Servlet examples.
+    </description>
+
+   <!-- Servlet definitions and mappings  -->
+
+    <servlet>
+        <servlet-name>Project4</servlet-name>
+        <description> This Servlet Executes SQL Queries </description>
+        <servlet-class>Project4</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Project4</servlet-name>
+        <url-pattern>/Project4</url-pattern>
+    </servlet-mapping>
+
+     <!-- Database Connection and Login  -->          
+               
+    <init-param>
+        <param-name>databaseDriver</param-name>
+        <param-value>com.mysql.cj.jdbc.Driver</param-value>
+    </init-param>
+    
+    <init-param>
+        <param-name>databaseName</param-name>
+        <param-value>jdbc:mysql://localhost:3306/project4</param-value>
+    </init-param>
+    
+    <init-param>
+        <param-name>username</param-name>
+        <param-value>root</param-value>
+    </init-param>
+    
+    <init-param>
+        <param-name>password</param-name>
+        <param-value>rootuser1</param-value>
+    </init-param>
+    
+</web-app>
